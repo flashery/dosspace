@@ -16,8 +16,8 @@ function Workspaces() {
       <div className="Workspaces__content">
         <Routes>
           <Route path="/readme" element={<ReadMe />} />
-          <Route path="*" element={<WorkspaceList />} />
           <Route path="/:workspaceId" element={<WorkspaceDetails />} />
+          <Route path="*" element={<WorkspaceList />} />
         </Routes>
       </div>
     </>
