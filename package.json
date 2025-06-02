@@ -28,7 +28,7 @@
   "scripts": {
     "start": "concurrently \"react-scripts start\" \"cd src/api && ts-node app.ts && yarn watch\"",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!axios)/\"",
     "eject": "react-scripts eject",
     "prettier": "prettier --config .prettierrc.json . --write"
   },
